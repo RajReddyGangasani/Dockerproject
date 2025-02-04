@@ -1,6 +1,6 @@
-FROM httpd
+FROM nginx
 WORKDIR /raj/reddy/devops
 COPY index.html .
 EXPOSE 80
-CMD ["httpd-foreground"]
+CMD ["nginx", "-g", "daemon off;"]
 
